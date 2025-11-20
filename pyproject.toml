@@ -28,7 +28,6 @@ dependencies = [
     "setfit>=0.7.0",
     "spacy>=3.6.1",
     "yake>=0.4.8",
-    "es-core-news-sm",
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -40,4 +39,5 @@ Homepage = "https://github.com/nlp4bia-bsc/KeyCARE"
 Documentation = "https://github.com/nlp4bia-bsc/KeyCARE/docs"
 Repository = "https://github.com/nlp4bia-bsc/KeyCARE"
 Issues = "https://github.com/nlp4bia-bsc/KeyCARE/issues"
+
 
