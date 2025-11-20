@@ -51,5 +51,4 @@ classifiers = [
 Homepage = "https://github.com/nlp4bia-bsc/KeyCARE"
 Documentation = "https://github.com/nlp4bia-bsc/KeyCARE/docs"
 Repository = "https://github.com/nlp4bia-bsc/KeyCARE"
-
 Issues = "https://github.com/nlp4bia-bsc/KeyCARE/issues"
