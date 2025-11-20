@@ -27,7 +27,7 @@ class TransformersRelator(Relator):
         """
         self.mlb = MultiLabelBinarizer()
         self.mlb.fit([self.labels])
-        path = 'BSC-NLP4BIA/SapBERT-parents-from-roberta-base-biomedical-clinical-es'
+        path = 'BSC-NLP4BIA/SapBERT-from-roberta-base-biomedical-clinical-es'
         self.tokenizer = AutoTokenizer.from_pretrained(path)
         if model_path is None:
             path = 'BSC-NLP4BIA/biomedical-semantic-relation-classifier'        
