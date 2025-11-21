@@ -1,4 +1,5 @@
 import torch
+from tqdm import tqdm
 from sklearn.preprocessing import MultiLabelBinarizer
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from .Relator import Relator
@@ -54,8 +55,8 @@ class TransformersRelator(Relator):
         with torch.no_grad():
             output = self.model(**tokenized_mention)
         logits = output.logits
-        for i in range(len(logits.tolist())):
-            predscores = {label: score for label, score in zip(self.labels, logits.tolist()[i])}
+        for logit in tqdm(logits, desc="Computing relations"):
+            predscores = {label: score for label, score in zip(self.labels, logit)}
             top_n_labels = sorted(predscores, key=predscores.get, reverse=True)[:self.n]
             filtered_labels = [label for label in top_n_labels if predscores[label] > self.threshold]
             final_labels.append(filtered_labels)
