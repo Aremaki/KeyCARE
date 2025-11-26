@@ -8,7 +8,6 @@ build-backend = "setuptools.build_meta"
 [tool.setuptools.packages.find]
 where = ["src"]
 include = ["keycare*"]
-exclude = ["tests*"]
 
 [project]
 name = "keycare"
@@ -19,15 +18,9 @@ authors = [{ name = "Sergi Marsol", email = "sergimarsolt@gmail.com" }]
 license = { file = "LICENSE" }
 requires-python = ">=3.9"
 dependencies = [
-    "keybert>=0.7.0",
-    "keyphrase-vectorizers>=0.0.11",
-    "pandas>=2.0.3",
-    "pickleshare>=0.7.5",
-    "pytextrank>=3.2.5",
-    "rake-nltk>=1.0.6",
     "setfit>=0.7.0",
-    "spacy>=3.6.1",
-    "yake>=0.4.8",
+    "transformers>=4.30.0",
+    "torch>=2.0.0",
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
