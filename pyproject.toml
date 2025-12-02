@@ -21,6 +21,7 @@ dependencies = [
     "setfit>=0.7.0",
     "transformers>=4.33.0",
     "torch>=2.0.1",
+    "openai>=2.0.0",
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
